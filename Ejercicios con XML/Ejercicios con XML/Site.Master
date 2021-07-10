@@ -7,8 +7,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - Mi aplicación ASP.NET</title>
-
+    <title>Ejercicios con XML</title>
+    <link href="/Content/Styles.css" rel="stylesheet" />
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
@@ -30,8 +30,8 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a runat="server" href="/Default.aspx">Inicio</a></li>
-                    <li><a runat="server" href="/EjercicioA.aspx">Ejercicio A</a></li>
-                    <li><a runat="server" href="/EjercicioB.aspx">Ejercicio B</a></li>
+                    <li><a runat="server" href="/EjercicioA.aspx">Crear XML</a></li>
+                    <li><a runat="server" href="/EjercicioB.aspx">Leer XML</a></li>
                 </ul>
             </div>
         </div>

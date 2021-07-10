@@ -13,5 +13,9 @@ namespace Ejercicios_con_XML
         {
 
         }
+        protected void crearXML_OnClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
