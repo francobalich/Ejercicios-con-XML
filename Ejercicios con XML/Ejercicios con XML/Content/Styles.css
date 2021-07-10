@@ -48,7 +48,11 @@ section div{
     -webkit-box-shadow: inset 1px 5px 15px 1px rgba(0,0,0,0.31);
     box-shadow: inset 1px 5px 15px 1px rgba(0,0,0,0.31);
 }
-.textInfo{
+.redirect {
+    display: none;
+    margin-top: 20px;
+}
+.textInfo {
     font-weight: bold;
 }
 .msgError {
