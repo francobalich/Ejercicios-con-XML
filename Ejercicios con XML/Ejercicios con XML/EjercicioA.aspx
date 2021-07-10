@@ -4,7 +4,7 @@
         <section>
             <p>Por favor, ingrese los datos solicitados para crear un archivo XML.</p>
             <div>
-                <asp:Label ID="Label1" runat="server" Text="Apellido"></asp:Label>
+                <asp:Label ID="Label1" runat="server" Text="Apellido" CssClass="textInfo"></asp:Label>
                 <asp:TextBox ID="txtApellido" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator
                     class="alerta" controltovalidate="txtApellido"
@@ -13,7 +13,7 @@
             </div>
 
             <div>
-                <asp:Label ID="Label2" runat="server" Text="Sueldo"  CssClass="positionRight"></asp:Label>
+                <asp:Label ID="Label2" runat="server" Text="Sueldo"  CssClass="positionRight textInfo"></asp:Label>
                 <asp:TextBox ID="txtSueldo" runat="server" CssClass="positionRight"></asp:TextBox>
                 <asp:RequiredFieldValidator
                     class="alerta" controltovalidate="txtSueldo"
