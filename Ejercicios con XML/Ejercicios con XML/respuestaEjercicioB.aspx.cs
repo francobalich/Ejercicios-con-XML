@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Xml;
 
 namespace Ejercicios_con_XML
 {
@@ -11,34 +12,27 @@ namespace Ejercicios_con_XML
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string path = Server.MapPath("Sueldos.xml");
-            if (File.Exists(path))
+            if (Session["apellido"]!=null)
             {
-                XmlTextReader archivoXML = new XmlTextReader(path);
-                Dictionary<string, string> datos = new Dictionary<string, string>();
-                while (archivoXML.Read())
+                lblApellido.Text = Session["apellido"].ToString();
+            }
+
+            if (Session["sueldo"] != null)
+            {
+                int sueldo = Convert.ToInt32(Session["sueldo"].ToString());
+                lblSueldo.Text = sueldo.ToString();
+                if (sueldo>150000)
                 {
-                    if (archivoXML.Name == "Apellido")
-                    {
-                        archivoXML.Read();
-                        lblApellido.Text = archivoXML.Value;
-                        Session["apellido"] = archivoXML.Value;
-                        archivoXML.Read();
-                    }
-                    else if (archivoXML.Name == "Sueldo")
-                    {
-                        archivoXML.Read();
-                        lblSueldo.Text = archivoXML.Value;
-                        Session["sueldo"] = archivoXML.Value;
-                        archivoXML.Read();
-                    }
+                    lblMsg.Text="¡Tiene que pagar ganancias!";
+                    lblMsg.Attributes.Add("style", "opacity:1;");
                 }
-                archivoXML.Close();
+                else
+                {
+                    lblMsg.Text = "¡NO tiene que pagar ganancias!";
+                    lblMsg.Attributes.Add("style", "opacity:1;");
+                }
             }
-            else
-            {
-                lblMsg.Attributes.Add("style", "opacity:1;");
-            }
+            
         }
     }
 }

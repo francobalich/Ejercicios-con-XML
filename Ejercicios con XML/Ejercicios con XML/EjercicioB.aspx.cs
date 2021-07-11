@@ -29,6 +29,7 @@ namespace Ejercicios_con_XML
                     }
                 }
                 archivoXML.Close();
+                Response.Redirect("respuestaEjercicioB.aspx");
             }
         }
     }
