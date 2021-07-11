@@ -2,7 +2,7 @@
 <!--Ejercicio de escritura en un archivo XML-->
 <Persona>
   <Datos>
-    <Apellido>Prueba</Apellido>
+    <Apellido>Prueba2</Apellido>
     <Sueldo>180000</Sueldo>
   </Datos>
 </Persona>
