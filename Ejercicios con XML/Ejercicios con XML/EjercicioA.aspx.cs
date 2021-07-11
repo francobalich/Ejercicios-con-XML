@@ -10,7 +10,7 @@ namespace Ejercicios_con_XML
         {
             try
             {
-                string path = Server.MapPath("Sueldos.xml");
+                string path = Server.MapPath("Datos.xml");
                 XmlTextWriter archivoXML = new XmlTextWriter(path, null);
 
                 archivoXML.Formatting = Formatting.Indented;

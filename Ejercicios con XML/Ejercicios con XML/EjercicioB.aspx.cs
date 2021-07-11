@@ -9,7 +9,7 @@ namespace Ejercicios_con_XML
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string path = Server.MapPath("Sueldos.xml");
+            string path = Server.MapPath("Datos.xml");
             if (File.Exists(path))
             {
                 XmlTextReader archivoXML = new XmlTextReader(path);
