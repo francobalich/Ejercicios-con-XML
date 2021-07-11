@@ -1,4 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="EjercicioA.aspx.cs" Inherits="Ejercicios_con_XML.EjercicioA" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="EjercicioA.aspx.cs"
+    Inherits="Ejercicios_con_XML.EjercicioA" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <form id="form1" runat="server">
         <section>
@@ -23,12 +25,10 @@
                     class="alerta alerta-regex" controltovalidate="txtSueldo" text="El valor debe ser númerico"
                     validationexpression="^\d+" runat="server"  CssClass="msgError positionLeft"/>
             </div>
-
             <asp:Button ID="btnCrearXML" runat="server" OnClick="crearXML_Click"  Text="Crear XML" CssClass="button"/>
             <br />
             <asp:Label ID="lblMsg" runat="server" Text="¡Se creo exitosamente el archivo XML!" CssClass="msgOK"></asp:Label>
              <asp:Button ID="btnLeerXML" runat="server" OnClick="leerMsg_Click"  Text="Ir a leer XML" CssClass="button redirect"/>
         </section>
-       
     </form>
 </asp:Content>

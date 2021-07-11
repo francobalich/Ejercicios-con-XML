@@ -1,19 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using System.Xml;
 
 namespace Ejercicios_con_XML
 {
     public partial class EjercicioA : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
+        protected void Page_Load(object sender, EventArgs e){ }
         protected void crearXML_Click(object sender, EventArgs e)
         {
             try
@@ -21,7 +13,6 @@ namespace Ejercicios_con_XML
                 string path = Server.MapPath("Sueldos.xml");
                 XmlTextWriter archivoXML = new XmlTextWriter(path, null);
 
-                
                 archivoXML.Formatting = Formatting.Indented;
                 archivoXML.WriteStartDocument();
 
@@ -49,7 +40,6 @@ namespace Ejercicios_con_XML
                 lblMsg.Text = ex.Message;
                 lblMsg.Attributes.Add("style", "opacity:1;");
             }
-            
         }
         protected void leerMsg_Click(object sender, EventArgs e)
         {

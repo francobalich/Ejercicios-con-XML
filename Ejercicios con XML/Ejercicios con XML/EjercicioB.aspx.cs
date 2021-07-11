@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using System.Xml;
 
 namespace Ejercicios_con_XML
@@ -13,7 +9,6 @@ namespace Ejercicios_con_XML
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
             string path = Server.MapPath("Sueldos.xml");
             if (File.Exists(path))
             {

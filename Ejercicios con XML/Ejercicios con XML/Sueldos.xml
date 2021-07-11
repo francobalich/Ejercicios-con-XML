@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<!--Ejercicio de escritura en un archivo XML-->
-<Persona>
-  <Datos>
-    <Apellido>Balich</Apellido>
-    <Sueldo>40000</Sueldo>
-  </Datos>
-</Persona>
